@@ -16,7 +16,8 @@ dotenv.config();
 
 const allowedOrigins = [
   "https://bbms-tk59.onrender.com",
-  "https://bbms-tk59.onrender.com/api/v1"
+  "https://bbms-tk59.onrender.com/api/v1",
+  "https://bbms-three.vercel.app"
 ];
 
 // MongoDB connection
