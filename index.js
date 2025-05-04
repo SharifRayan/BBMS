@@ -15,8 +15,7 @@ dotenv.config();
 // const allowedOrigins = ["http://localhost:3000"];
 
 const allowedOrigins = [
-  "http://localhost:3000",
-  "https://capstone-project-rk04.onrender.com",
+  "https://bbms-tk59.onrender.com"
 ];
 
 // MongoDB connection
