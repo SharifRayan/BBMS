@@ -8,7 +8,7 @@ function BloodRequestsList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/v1/blood-requests")
+      .get("https://bbms-tk59.onrender.com/api/v1/blood-requests")
       .then((response) => {
         setRequests(response.data);
       })

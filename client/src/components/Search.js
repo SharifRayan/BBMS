@@ -10,7 +10,7 @@ const Search = () => {
   const [bloodType, setBloodType] = useState("");
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/v1/donors")
+      .get("https://bbms-tk59.onrender.com/api/v1/donors")
       .then((response) => {
         const sanitizedData = response.data.map((donor) => ({
           ...donor,

@@ -12,7 +12,7 @@ const Notifications = () => {
   const unreadCount = notifications.filter((n) => !n.read).length;
 
   useEffect(() => {
-    socketRef.current = io("localhost:8000");
+    socketRef.current = io("https://bbms-tk59.onrender.com");
     if (user?._id) socketRef.current.emit("joinNotifications", user._id);
     socketRef.current.on("newNotification", (newNotification) => {
       setNotifications((prev) => [newNotification, ...prev]);

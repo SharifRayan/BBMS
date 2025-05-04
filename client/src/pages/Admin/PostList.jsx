@@ -12,7 +12,7 @@ const PostList = () => {
     const fetchBloodRequests = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/blood-requests"
+          "https://bbms-tk59.onrender.com/api/v1/blood-requests"
         );
         setData(response.data);
       } catch (error) {
@@ -29,7 +29,7 @@ const PostList = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:8000/api/v1/blood-requests/${id}`
+        `https://bbms-tk59.onrender.com/api/v1/blood-requests/${id}`
       );
       setData((prevData) => prevData.filter((request) => request._id !== id));
     } catch (error) {

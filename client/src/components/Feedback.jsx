@@ -16,7 +16,7 @@ const FeedbackForm = () => {
     const fetchDonors = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/feedback/donors-name"
+          "https://bbms-tk59.onrender.com/api/v1/feedback/donors-name"
         );
         setDonors(response.data);
       } catch (error) {
@@ -34,7 +34,7 @@ const FeedbackForm = () => {
 
     try {
       await axios.post(
-        "http://localhost:8000/api/v1/feedback/feedback-post",
+        "https://bbms-tk59.onrender.com/api/v1/feedback/feedback-post",
         feedback
       );
       setDescription("");

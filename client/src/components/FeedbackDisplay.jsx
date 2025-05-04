@@ -7,7 +7,7 @@ const FeedbackDisplay = () => {
     const fetchFeedbacks = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/v1/feedback"
+          "https://bbms-tk59.onrender.com/api/v1/feedback"
         );
         setFeedbacks(response.data);
       } catch (error) {
