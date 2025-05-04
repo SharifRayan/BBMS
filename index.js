@@ -15,7 +15,8 @@ dotenv.config();
 // const allowedOrigins = ["http://localhost:3000"];
 
 const allowedOrigins = [
-  "https://bbms-tk59.onrender.com"
+  "https://bbms-tk59.onrender.com",
+  "https://bbms-tk59.onrender.com/api/v1"
 ];
 
 // MongoDB connection
